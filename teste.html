@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body class="banner">
+
+    <nav class="navbar navbar-light bg-light">
+        <a href="#"><img class="ms-5" src="images/logo-neg.png" width="100px" alt="sino"></a>
+    </nav>
+
+    <div class="row container">
+        <div class="col">
+            <div class="box mt-5 mb-5">
+                <main>
+                    <form class="" action="querecebe.php" method="post">
+                        <div class="row mt-5 align-items-center">
+                            <div class="col mt-5 ms-5">
+                                <label for="nome">Nome</label>
+                                <input class="mb-2 form-control" name="nome" id="nome" type="text">
+
+                                <label for="tel">Telefone</label>
+                                <input class="mb-2 form-control" name="tel" id="tel" type="text">
+
+                            </div>
+
+                            <div class="col ms-5">
+                                <div class="row align-items-center d-block">
+                                    <div class="col">
+                                        <div>Visualização</div>
+                                    </div>
+                                    <div class="col">
+                                        <div>Compartilhamento</div>
+                                    </div>
+                                    <div class="col">
+                                        <div>Clicks</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-5 ms-3">
+                            <div class="row">
+                                <div class="col slider mt-3">
+                                    <input onchange="changeText();" class="form-range" type="range" min="1" max="100" value="20">
+                                </div>
+                                <div class="col-3">
+                                    <div class="d-inline sign">R$</div>
+                                    <div class="d-inline value">100</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="row m-5 d-flex justify-content-center align-items-center">
+                                <div class="col-sm-6">
+                                    <label for="entrada">DATA DE INICIO</label>
+                                    <input class="form-control" name="entrada" id="entrada" type="date">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="saida">DATA DE TEMRINO</label>
+                                    <input class="form-control" name="saida" id="saida" type="date">
+                                </div>
+                            </div>
+                            <div class="mt-4 mb-4 d-flex justify-content-center align-items-center">
+                                <button type="submit" id="btn" class="mt-3 d-block mybtn btn">Salvar</button>
+                            </div>
+                        </div>
+                    </form>
+                </main>
+            </div>
+
+
+
+
+
+
+        </div>
+        <div class="col">
+            <h1>Hello</h1>
+        </div>
+    </div>
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
