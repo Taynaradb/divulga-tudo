@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.value, .sign{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.box{
+    border-radius: 1rem;
+    background-color: rgba(241, 241, 241, 0.9);
+    
+}
